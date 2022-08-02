@@ -27,41 +27,48 @@
   </head>
 
   <body data-page>
-    <!--Шапка сторінки-->
+    <!--===^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^===>
+			* * * * * * Шапка сторінки * * * * * *
+<====^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^===-->
     <header class="header">
-      <div class="container header-container">
-        <nav class="nav header-container">
-          <a class="logo link" href="./index.html">Web<span class="header-logo">Studio</span></a>
-          <ul class="list site-nav">
-            <li class="item">
-              <a class="link page-link header-current-page" href="./index.html">Студія</a>
+      <div class="container header__container">
+        <a class="logo header__logo link" href="./index.html"
+          >Web<span class="header__logo--text">Studio</span></a
+        >
+
+        <nav class="nav">
+          <ul class="list nav__list">
+            <li class="nav__item">
+              <a class="link nav__link nav__link--current" href="./index.html">Студія</a>
             </li>
-            <li class="item"><a class="link page-link" href="./portfolio.html">Портфоліо</a></li>
-            <li class="item"><a class="link page-link" href="#contacts">Контакти</a></li>
+            <li class="nav__item">
+              <a class="link nav__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="nav__item"><a class="link nav__link" href="#contacts">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="list header-link">
-          <li class="item">
+        <ul class="list header__list header__contacts">
+          <li class="header__item">
             <a
-              class="link"
+              class="header__link link"
               href="mailto:info@devstudio.com"
               title="написати емейл на info@devstudio.com"
               aria-label="Іконка емейла"
             >
-              <svg class="contact-icon" width="16" height="12">
+              <svg class="header__link--icon" width="16" height="12">
                 <use href="./images/icons.svg#mail"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
+          <li class="header__item">
             <a
-              class="link header-links"
+              class="header__link link"
               href="tel:+380961111111"
               title="подзвонити на +380961111111"
               aria-label="Іконка смартфону"
             >
-              <svg class="contact-icon" width="10" height="16">
+              <svg class="header__link--icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -70,57 +77,61 @@
       </div>
     </header>
     <main class="index-main">
-      <!-- hero -->
+      <!--===^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^===>
+			* * * * * * Hero section  * * * * * *
+<====^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^===-->
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button data-modal-open class="hero-btn" type="button">Замовити послугу</button>
+          <button data-modal-open class="btn" type="button">Замовити послугу</button>
         </div>
       </section>
 
-      <!--Блок Особливості-->
+      <!--===^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^===>
+			* * * * * * Блок Особливості * * * * * *
+<====^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^===-->
       <section class="features section">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
-          <ul class="list card-set">
-            <li class="item card-item">
+          <ul class="list features__list card-set">
+            <li class="features__item card-item">
               <div class="features-item">
                 <svg class="features-icon" width="70" height="70">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <h3 class="features__title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li class="item card-item">
+            <li class="features__item card-item">
               <div class="features-item">
                 <svg class="features-icon" width="70" height="70">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
+              <h3 class="features__title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе
               </p>
             </li>
-            <li class="item card-item">
+            <li class="features__item card-item">
               <div class="features-item">
                 <svg class="features-icon" width="70" height="70">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="title">ПЛАНУВАННЯ</h3>
+              <h3 class="features__title">ПЛАНУВАННЯ</h3>
               <p class="">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
-            <li class="item card-item">
+            <li class="features__item card-item">
               <div class="features-item">
                 <svg class="features-icon" width="70" height="70">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <h3 class="features__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
@@ -128,7 +139,9 @@
           </ul>
         </div>
       </section>
-      <!--Чим займаємось-->
+      <!--===^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^===>
+			* * * * * * Чим займаємось * * * * * *
+<====^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^===-->
       <section class="work section">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
@@ -172,7 +185,10 @@
           </ul>
         </div>
       </section>
-      <!--Наша команда-->
+
+      <!--===^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^===>
+			* * * * * * Наша команда * * * * * *
+<====^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^===-->
       <section class="team section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
@@ -448,7 +464,10 @@
           </ul>
         </div>
       </section>
-      <!-- partners section -->
+
+      <!--===^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^===>
+			* * * * * * Наші партнери * * * * * *
+<====^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^===-->
       <section class="section our-partners">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
@@ -535,7 +554,10 @@
         </div>
       </section>
     </main>
-    <!-- Footer -->
+
+    <!--===^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^===>
+			* * * * * * Футер * * * * * *
+<====^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^===-->
     <footer class="footer">
       <div class="container">
         <div class="footer-elements">
@@ -639,7 +661,7 @@
                 id="subscribe-email"
                 placeholder="E-mail"
               />
-              <button class="hero-btn email-subscribe-btn" type="submit">
+              <button class="btn email-subscribe-btn" type="submit">
                 Підписатися
                 <svg class="email-subscribe-btn-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
@@ -650,7 +672,10 @@
         </div>
       </div>
     </footer>
-    <!-- Modal -->
+
+    <!--===^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^===>
+			* * * * * * Модальне вікно * * * * * *
+<====^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^===-->
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn" data-modal-close>
@@ -719,10 +744,12 @@
             >
           </label>
 
-          <button class="hero-btn" type="submit">Відправити</button>
+          <button class="btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
+а
