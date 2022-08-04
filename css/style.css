@@ -16,7 +16,7 @@
 	--btn-hover: #188CE8;
 	--light-grey-bgc: #F5F4FA;
 	--icon-link: #AFB1B8;
-	--social-link-bgc: rgba(255, 255, 255, 0.1);
+	--social__link-bgc: rgba(255, 255, 255, 0.1);
 	--icon-black: #000000;
 	--overlay-bgc: rgba(33, 150, 243, 0.9);
 	--placeholder-txt-clr: rgba(117, 117, 117, 0.5);
@@ -675,7 +675,7 @@ ul {
 	color: var(--accent);
 }
 
-.footer-logo {
+.footer__logo {
 	color: var(--primary-white);
 }
 
@@ -702,7 +702,7 @@ ul {
 		padding-top: 60px;
 		padding-bottom: 60px;
 } */
-.address-link[target="_blank"] {
+.address__link[target="_blank"] {
 	color: var(--primary-white);
 }
 
@@ -711,18 +711,18 @@ ul {
 	color: var(--transparent-white);
 }
 
-.address-item {
+.adress__item {
 	display: block;
 }
 
-.address-item:not(:last-child) {
+.adress__item:not(:last-child) {
 	margin-bottom: 9px;
 }
 
 
 
-/* socials icons */
-.socials {
+/* social__list icons */
+.social__list {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -730,7 +730,7 @@ ul {
 
 }
 
-.social-link {
+.social__link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -744,14 +744,14 @@ ul {
 		color var(--transition);
 }
 
-.social-icon {
+.social__icon {
 	fill: currentColor;
 
 
 }
 
-.social-link:hover,
-.social-link:focus {
+.social__link:hover,
+.social__link:focus {
 	background-color: var(--accent);
 	color: var(--primary-white);
 }
@@ -759,7 +759,7 @@ ul {
 
 
 /* footer social icons */
-.footer-elements {
+.footer__container {
 	display: flex;
 	align-items: baseline;
 	justify-content: space-between;
@@ -771,7 +771,17 @@ ul {
 	margin-left: auto;
 } */
 
-.footer-socials .tittle,
+.footer__tittle {
+	display: block;
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: var(--primary-white);
+
+}
+
 .subscribe-title {
 	display: block;
 	margin-top: 0;
@@ -782,18 +792,18 @@ ul {
 	color: var(--primary-white);
 }
 
-.footer-socials .link {
-	background-color: var(--social-link-bgc);
+.footer-social.link {
+	background-color: var(--social__link-bgc);
 	transition:
 		background-color var(--transition);
 }
 
-.footer-socials .social-icon {
+.footer-social__list .social__icon {
 	color: var(--primary-white);
 }
 
-.footer-socials .link:hover,
-.footer-socials .link:focus {
+.footer-social__list .link:hover,
+.footer-social__list .link:focus {
 	background-color: var(--accent);
 }
 
