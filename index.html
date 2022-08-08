@@ -25,7 +25,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- Підключення стилів -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>WebStudio</title>
   </head>
 
@@ -35,9 +35,7 @@
 <====^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^===-->
     <header class="header">
       <div class="container header__container">
-        <a class="logo header__logo link" href="./index.html"
-          >Web<span class="header__logo--text">Studio</span></a
-        >
+        <a class="logo link" href="./index.html">Web<span class="logo-text">Studio</span></a>
 
         <nav class="nav">
           <ul class="list nav__list">
@@ -50,28 +48,28 @@
             <li class="nav__item"><a class="link nav__link" href="#contacts">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="list header__list header__contacts">
-          <li class="header__item">
+        <ul class="list contacts">
+          <li class="contacts__item">
             <a
-              class="header__link link"
+              class="contacts__link link"
               href="mailto:info@devstudio.com"
               title="написати емейл на info@devstudio.com"
               aria-label="Іконка емейла"
             >
-              <svg class="header__link--icon" width="16" height="12">
+              <svg class="contacts__link-icon" width="16" height="12">
                 <use href="./images/icons.svg#mail"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="header__item">
+          <li class="contacts__item">
             <a
-              class="header__link link"
+              class="contacts__link link"
               href="tel:+380961111111"
               title="подзвонити на +380961111111"
               aria-label="Іконка смартфону"
             >
-              <svg class="header__link--icon" width="10" height="16">
+              <svg class="contacts__link-icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -86,7 +84,7 @@
 <====^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^===-->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button data-modal-open class="btn" type="button">Замовити послугу</button>
         </div>
       </section>
@@ -568,12 +566,12 @@
       <div class="container">
         <div class="footer__container">
           <div class="footer__element">
-            <a class="logo link" href="./index.html">Web<span class="footer__logo">Studio</span></a>
-            <adress class="adress" id="contacts">
-              <ul class="list adress-list">
-                <li class="adress__item">
+            <a class="logo link" href="./index.html">Web<span class="logo-text">Studio</span></a>
+            <address class="address" id="contacts">
+              <ul class="list address__list">
+                <li class="address__item">
                   <a
-                    class="link adress__link"
+                    class="link address__link"
                     href="https://goo.gl/maps/cNJtUJa9J2kEtoYp9"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -581,24 +579,24 @@
                     >м. Київ, пр-т Лесі Українки, 26</a
                   >
                 </li>
-                <li class="adress__item">
+                <li class="address__item">
                   <a
-                    class="link adress__link"
+                    class="link address__link"
                     href="mailto:info@devstudio.com"
                     title="написати емейл на info@devstudio.com"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li class="adress__item">
+                <li class="address__item">
                   <a
-                    class="link adress__link"
+                    class="link address__link"
                     href="tel:+380961111111"
                     title="подзвонити на +380961111111"
                     >+38 096 111 11 11</a
                   >
                 </li>
               </ul>
-            </adress>
+            </address>
           </div>
           <div class="footer-social">
             <h3 class="footer__tittle">Приєднуйтесь</h3>
@@ -684,40 +682,40 @@
 <====^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^===-->
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn" data-modal-close>
-          <svg class="modal-btn-icon" width="11" height="11">
+        <button class="modal__btn" data-modal-close>
+          <svg class="modal__icon" width="11" height="11">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <form class="modal-form" name="modal-form" autocomplete="on">
-          <strong class="modal-title">Залиште свої дані, ми вам передзвонимо</strong>
-          <div class="modal-form-group">
-            <div class="modal-form-item">
-              <label class="modal-form-label" for="user-name" autofocus>Ім'я</label>
-              <input class="modal-form-input" name="username" id="user-name" type="text" />
-              <svg class="modal-icon modal-user-icon" width="18" height="18">
+        <form class="register" name="register" autocomplete="on">
+          <strong class="register__title">Залиште свої дані, ми вам передзвонимо</strong>
+          <div class="register__group">
+            <div class="register__item">
+              <label class="register__label" for="user-name" autofocus>Ім'я</label>
+              <input class="register__input" name="username" id="user-name" type="text" />
+              <svg class="modal-icon register__user-icon" width="18" height="18">
                 <use href="./images/icons.svg#person-modal"></use>
               </svg>
             </div>
-            <div class="modal-form-item">
-              <label class="modal-form-label" for="phone">Телефон</label>
-              <input class="modal-form-input" name="phone" id="phone" type="tel" />
-              <svg class="modal-icon modal-user-icon" width="18" height="18">
+            <div class="register__item">
+              <label class="register__label" for="phone">Телефон</label>
+              <input class="register__input" name="phone" id="phone" type="tel" />
+              <svg class="modal-icon register__user-icon" width="18" height="18">
                 <use href="./images/icons.svg#phone-modal"></use>
               </svg>
             </div>
 
-            <label class="modal-form-item" for="email"
-              ><span class="modal-form-label">Пошта</span
-              ><input class="modal-form-input" name="email" id="email" type="email" />
-              <svg class="modal-icon modal-user-icon" width="18" height="18">
+            <label class="register__item" for="email"
+              ><span class="register__label">Пошта</span
+              ><input class="register__input" name="email" id="email" type="email" />
+              <svg class="modal-icon register__user-icon" width="18" height="18">
                 <use href="./images/icons.svg#email-modal"></use>
               </svg>
             </label>
-            <label class="modal-form-item" for="comments"
-              ><span class="modal-form-label">Коментарі</span
+            <label class="register__item" for="comments"
+              ><span class="register__label">Коментарі</span
               ><textarea
-                class="modal-form-input textarea"
+                class="register__input textarea"
                 name="comments"
                 id="comments"
                 rows="10"
@@ -726,25 +724,25 @@
             </label>
           </div>
 
-          <label class="user-agreement-group" for="user-agreement">
+          <label class="user-agreement__group" for="user-agreement">
             <input
-              class="user-agreement-input visually-hidden"
+              class="user-agreement__input visually-hidden"
               name="user-agreement"
               type="checkbox"
               id="user-agreement"
               required
             />
-            <svg class="user-agreement-icon" width="18" height="18">
+            <svg class="user-agreement__icon" width="18" height="18">
               <use
-                class="user-agreement-icon-uncheck"
+                class="user-agreement__icon--uncheck"
                 href="./images/icons.svg#unchecked-icon"
               ></use>
               <use
-                class="user-agreement-icon-check"
+                class="user-agreement__icon--check"
                 href="./images/icons.svg#checked-icon"
               ></use></svg
-            ><span class="user-agreement-label"
-              >Погоджуюся з розсилкою та приймаю<a class="user-agreement-link" href=""
+            ><span class="user-agreement__label"
+              >Погоджуюся з розсилкою та приймаю<a class="user-agreement__link" href=""
                 >Умови договору</a
               ></span
             >
@@ -757,5 +755,3 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
-
-а
